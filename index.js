@@ -109,7 +109,13 @@ function sendmail(event) {
 
 document.getElementById("contactForm").addEventListener("submit", sendmail);
 
-    
-    
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent form from submitting
+    document.getElementById('myModal').style.display = 'block'; // Show modal
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none'; // Close modal
+}
    
 
