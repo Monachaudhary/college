@@ -26,6 +26,7 @@ function sendmail(event) {
         email_id: document.getElementById("email").value,
         services: document.getElementById("services").value,
         name: document.getElementById("name").value,
+        name: document.getElementById("phone").value,
     };
 
     emailjs.send("service_b52pvoc", "template_lhu5kvc", params)
@@ -35,6 +36,7 @@ function sendmail(event) {
             document.getElementById("message").value = "";
             document.getElementById("email").value = "";
             document.getElementById("services").value = "";
+            document.getElementById("phone").value = "";
 
             // Show success message
             var successMessage = document.getElementById("successMessage");
@@ -49,3 +51,15 @@ function sendmail(event) {
 }
 
 document.getElementById("contactForm").addEventListener("submit", sendmail);
+
+
+    
+    
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent form from submitting
+    document.getElementById('myModal').style.display = 'block'; // Show modal
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none'; // Close modal
+}
