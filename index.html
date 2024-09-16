@@ -35,14 +35,14 @@ publicKey: "J-kQj9zmQVikyCIYs",
                 <li><a href="index.html">Home</a></li>
                 <li><a href="features.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="about.html">About</a></li>
               </ul>
             <nav>
                 <ul class="hidemobile">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="About.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
                     <li class="menu-button" (click)="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
                 
@@ -78,6 +78,10 @@ publicKey: "J-kQj9zmQVikyCIYs",
         <div class="service-item">
             <h3>Presentation Making</h3>
             <p>Craft stunning and professional presentations that captivate your audience and convey your ideas effectively.</p>
+        </div>
+        <div class="service-item">
+            <h3>Resume Building</h3>
+            <p>We create professional, tailor-made resumes that highlight your skills and experiences, designed to catch the attention of recruiters and help you stand out in top companies.</p>
         </div>
         <div class="service-item">
             <h3>Project Reports</h3>
@@ -119,6 +123,9 @@ publicKey: "J-kQj9zmQVikyCIYs",
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="number" name="phone" id="phone" required>
             
             <label for="message">Details:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
@@ -127,7 +134,7 @@ publicKey: "J-kQj9zmQVikyCIYs",
             <select id="services" name="services" required>
                 <option >select</option>
                 <option value="Project">Project</option>
-                <option value="Project">Resume Making</option>
+                <option value="Project">Resume Building</option>
                 <option value="Assignment">Assignment</option>
                 <option value="Bonafide Format">Bonafide Format</option>
                 <option value="Provisional Certificate">Provisional Certificate</option>
@@ -138,7 +145,7 @@ publicKey: "J-kQj9zmQVikyCIYs",
             
             <button  type="submit">Submit</button>
         </form>
-         <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <p>Form submitted successfully!</p>
